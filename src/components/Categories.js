@@ -1,26 +1,26 @@
 import React, { useState } from 'react';
 import BookList from './BookList';
 import BookForm from './BookForm';
+import Navbar from './Navba';
 
-const CategoriesPage = () => {
+function Categories() {
   const [books, setBooks] = useState([]);
 
-  const handleAddBook = (title) => {
-    const newBook = { id: Date.now(), title };
-    setBooks([...books, newBook]);
+  const handleAddBook = (newBook) => {
+    setBooks((prevBooks) => [...prevBooks, newBook]);
   };
 
-  const handleDeleteBook = (id) => {
-    const updatedBooks = books.filter((book) => book.id !== id);
-    setBooks(updatedBooks);
+  const handleDeleteBook = (bookId) => {
+    setBooks((prevBooks) => prevBooks.filter((book) => book.id !== bookId));
   };
 
   return (
     <div>
-      <BookForm onSubmit={handleAddBook} />
+      <Navbar />
+      <BookForm onAdd={handleAddBook} />
       <BookList books={books} onDelete={handleDeleteBook} />
     </div>
   );
-};
+}
 
-export default CategoriesPage;
+export default Categories;

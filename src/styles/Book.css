@@ -1,6 +1,6 @@
 .Bookcontainer {
   display: grid;
-  row-gap: 50px;
+  row-gap: 35px;
   padding: 114px 24px;
   background-color: #e5e5e5;
   grid-template-rows: auto auto auto auto;
