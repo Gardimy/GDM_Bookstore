@@ -1,7 +1,7 @@
-# Math-magicians:tests
+# Bookstore: initialize project with components
 <br>
 <div align='center'>
-	<h1>Math-magicians</h1>
+	<h1>Bookstore</h1>
   </div>
 <a name="readme-top"></a>
 
@@ -20,9 +20,10 @@
 - [📝 License](#license)
 
 
-# 📖 math-magicians! <a name="about-project"></a>
+# 📖 Bookstore! <a name="about-project"></a>
 
-**math-magicians!** I create a full website for the Math magicians app, consisting of several pages and using the components I already created. I write unit tests for the Math Magicians app, using the Jest and React Testing Library libraries
+**Bookstore!** In this milestone, I create the user interface using React.
+And also set up client-side routing using React Router V6.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -59,7 +60,7 @@
   https://git-scm.com/downloads and install it).
 - Step 2: Once you have installed git you can clone this project using the command below:
   ```
-  git clone https://github.com/Gardimy/Math-magicians
+  git clone https://github.com/Gardimy/GDM_Bookstore
   ```
 - Step 3: Once you have cloned this repo navigate to the folder that contains
   the repository.
@@ -70,24 +71,24 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running cloning this repo `https://github.com/Gardimy/Math-magicians`.
+To get a local copy up and running cloning this repo `https://github.com/Gardimy/GDM_Bookstore`.
 
 ### Prerequisites
 
 There are no known prerequisites to run this project.
 If you encounter any issues trying to run it, please feel free to
-[open a ticket](https://github.com/Gardimy/JavaScript_capstone/issues) to let me know and i will work on it to the best
+[open a ticket](https://github.com/Gardimy/GDM_Bookstore/issues) to let me know and i will work on it to the best
 of my abilities
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-`https://github.com/Gardimy/Math-magicians`
+`https://github.com/Gardimy/GDM_Bookstore`
 
 or
 
-`https://github.com/Gardimy/Math-magicians` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
+`https://github.com/Gardimy/GDM_Bookstore` <-- _Only if you have [SSH keys configured](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) on your GitHub account_.
 
 ### Usage
 
@@ -137,7 +138,7 @@ or a web-hosting platform of your choice.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Gardimy/Math-magicians/issues).
+Feel free to check the [issues page](https://github.com/Gardimy/GDM_Bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
