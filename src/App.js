@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Book from './components/Book';
+import Categories from './components/Categories';
 import Navbar from './components/Navba';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Book />} />
-        {/* <Route path="Categories" element={<Categories />} /> */}
+        <Route path="Categories" element={<Categories />} />
       </Routes>
     </>
   );
