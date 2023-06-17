@@ -1,0 +1,24 @@
+.NavBarContainer {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.Navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  list-style: none;
+  color: gray;
+}
+
+h1 {
+  color: rgb(0, 162, 255);
+}
