@@ -26,6 +26,13 @@ function BookForm({ onAdd }) {
           placeholder="Title"
           required
         />
+        <input
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Author"
+          required
+        />
         <select name="mySelect" id="mySelect">
           <option value="option1">Categories</option>
           <option value="option2">Categories1</option>
