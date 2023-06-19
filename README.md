@@ -1,4 +1,4 @@
-# Bookstore: initialize project with components
+# Bookstore: add reducers and actions
 <br>
 <div align='center'>
 	<h1>Bookstore</h1>
@@ -22,8 +22,7 @@
 
 # 📖 Bookstore! <a name="about-project"></a>
 
-**Bookstore!** In this milestone, I create the user interface using React.
-And also set up client-side routing using React Router V6.
+**Bookstore!** In this milestone, I implement Redux Toolkit inside of a React application.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -127,6 +126,9 @@ or a web-hosting platform of your choice.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+
+- Use store, actions and reducers in React.
+- Connect React and Redux.
 
 - [ ] **Updates will be made shortly to make the page interactive**
 
