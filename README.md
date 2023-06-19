@@ -127,6 +127,9 @@ or a web-hosting platform of your choice.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Use store, actions and reducers in React.
+- Connect React and Redux.
+
 - [ ] **Updates will be made shortly to make the page interactive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
