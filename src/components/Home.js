@@ -16,7 +16,6 @@ const Home = () => {
 
   return (
     <div>
-      <h2>Home Page</h2>
       <BookForm onCreate={handleCreateBook} />
       <BookList books={books} onDelete={handleDeleteBook} />
     </div>
@@ -24,18 +23,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// import React from 'react';
-// import Navbar from './Navba';
-// import BookForm from './BookForm';
-
-// function HomePage() {
-//   return (
-//     <div>
-//       <Navbar />
-//       <BookForm />
-//     </div>
-//   );
-// }
-
-// export default HomePage;
