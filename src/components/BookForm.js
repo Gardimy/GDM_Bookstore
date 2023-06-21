@@ -1,14 +1,57 @@
+// import React, { useState } from 'react';
+// import PropTypes from 'prop-types';
+
+// const BookForm = ({ onCreate }) => {
+//   const [title, setTitle] = useState('');
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     if (title.trim()) {
+//       onCreate(title);
+//       setTitle('');
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <h2>Add New Book</h2>
+//       <form onSubmit={handleSubmit}>
+//         <input
+//           type="text"
+//           value={title}
+//           onChange={(e) => setTitle(e.target.value)}
+//           placeholder="Enter book title"
+//         />
+//         <select name="mySelect" id="mySelect">
+//           <option value="Categories1">Categories1</option>
+//           <option value="Categories2">Categories2</option>
+//           <option value="Categories3">Categories3</option>
+//         </select>
+//         <button type="submit">Add Book</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// BookForm.propTypes = {
+//   onCreate: PropTypes.string.isRequired,
+// };
+
+// export default BookForm;
+
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const BookForm = ({ onCreate }) => {
   const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title.trim()) {
-      onCreate(title);
+    if (title.trim() && author.trim()) {
+      onCreate(title, author);
       setTitle('');
+      setAuthor('');
     }
   };
 
@@ -22,11 +65,12 @@ const BookForm = ({ onCreate }) => {
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Enter book title"
         />
-        <select name="mySelect" id="mySelect">
-          <option value="Categories1">Categories1</option>
-          <option value="Categories2">Categories2</option>
-          <option value="Categories3">Categories3</option>
-        </select>
+        <input
+          type="text"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+          placeholder="Enter book author"
+        />
         <button type="submit">Add Book</button>
       </form>
     </div>
@@ -34,7 +78,7 @@ const BookForm = ({ onCreate }) => {
 };
 
 BookForm.propTypes = {
-  onCreate: PropTypes.string.isRequired,
+  onCreate: PropTypes.func.isRequired,
 };
 
 export default BookForm;
