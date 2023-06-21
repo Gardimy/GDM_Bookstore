@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook, removeBook } from '../redux/books/booksSlice';
+import { addBook, deleteBook } from '../redux/books/booksSlice';
 
 const BookButtons = () => {
   const dispatch = useDispatch();
@@ -16,8 +16,8 @@ const BookButtons = () => {
   };
 
   const handleRemoveBook = () => {
-    const bookIdToRemove = 'item1'; // Replace with the actual book ID you want to remove
-    dispatch(removeBook(bookIdToRemove));
+    const bookIdToRemove = 'item1';
+    dispatch(deleteBook(bookIdToRemove));
   };
 
   return (
