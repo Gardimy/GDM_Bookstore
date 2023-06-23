@@ -11,7 +11,7 @@ const Book = ({
   return (
     <div>
       <h3>{title}</h3>
-      <p>{author}</p>
+      {author && <p>{author}</p>}
       <button className="btn" type="button" onClick={handleDelete}>
         Delete
       </button>
@@ -22,7 +22,7 @@ const Book = ({
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   onDelete: PropTypes.func.isRequired,
 };
 
