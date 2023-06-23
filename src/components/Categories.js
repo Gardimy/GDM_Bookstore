@@ -1,24 +1,10 @@
-import React, { useState } from 'react';
-import BookList from './BookList';
-import BookForm from './BookForm';
-import Navbar from './Navba';
+import React from 'react';
 
 function Categories() {
-  const [books, setBooks] = useState([]);
-
-  const handleAddBook = (newBook) => {
-    setBooks((prevBooks) => [...prevBooks, newBook]);
-  };
-
-  const handleDeleteBook = (bookId) => {
-    setBooks((prevBooks) => prevBooks.filter((book) => book.id !== bookId));
-  };
-
   return (
     <div>
-      <Navbar />
-      <BookForm onAdd={handleAddBook} />
-      <BookList books={books} onDelete={handleDeleteBook} />
+      <h2>Categories Page</h2>
+      <button type="submit">Check Status</button>
     </div>
   );
 }
