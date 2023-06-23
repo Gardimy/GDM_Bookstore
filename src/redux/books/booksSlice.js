@@ -14,7 +14,12 @@ export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
 
 export const addBook = createAsyncThunk('books/createBook', async (bookData) => {
   const response = await axios.post('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/', bookData);
-  return response.data;
+  const newBook = response.bookData;
+  return {
+    id: newBook.id,
+    title: newBook.title,
+    author: newBook.author,
+  };
 });
 
 export const deleteBook = createAsyncThunk('books/deleteBook', async (id) => {
@@ -43,7 +48,7 @@ const bookSlice = createSlice({
         state.books = [...state.books, action.payload];
       })
       .addCase(deleteBook.fulfilled, (state, action) => {
-        state.books = state.books.filter((book) => book.item_id !== action.payload);
+        state.books = state.books.filter((book) => book.id !== action.payload);
       });
   },
 });
