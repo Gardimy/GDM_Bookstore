@@ -1,34 +1,9 @@
-.Bookcontainer {
-  display: grid;
-  row-gap: 35px;
-  padding: 114px 24px;
-  background-color: #e5e5e5;
-  grid-template-rows: auto auto auto auto;
-}
-
-.book1,
-.book2,
-.book3 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 0;
-}
-
-.btn {
-  margin-top: 12px;
-}
-
-.action {
-  list-style: none;
-  gap: 20px;
-}
-
-h3 {
-  font-size: small;
-  color: grey;
-}
-
-h4 {
-  height: 2px;
+.Lesson-Panel {
+  width: 75rem;
+  height: 10.625rem;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: var(--white-two);
 }

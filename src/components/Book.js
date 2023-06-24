@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import '../styles/Book.css';
 
 const Book = ({
   id, title, author, onDelete,
@@ -9,7 +10,7 @@ const Book = ({
   };
 
   return (
-    <div>
+    <div className="Lesson-Panel">
       <h3>{title}</h3>
       {author && <p>{author}</p>}
       <button className="btn" type="button" onClick={handleDelete}>
