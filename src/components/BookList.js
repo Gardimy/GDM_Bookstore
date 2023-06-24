@@ -13,8 +13,10 @@ const BookList = () => {
     dispatch(fetchBooks());
   }, [dispatch]);
 
-  const handleDeleteBook = (id) => {
-    dispatch(deleteBook(id));
+  const handleDeleteBook = async (id) => {
+    dispatch(deleteBook(id)).then(() => {
+      dispatch(fetchBooks());
+    });
   };
 
   if (status === 'loading') {
@@ -35,8 +37,8 @@ const BookList = () => {
     <div>
       {books && books.map((book) => (
         <Book
-          key={book.id}
-          id={book.id}
+          key={book.item_id}
+          id={book.item_id}
           title={book.title}
           author={book.author}
           onDelete={handleDeleteBook}
