@@ -1,18 +1,51 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchBooks, deleteBook } from '../redux/books/booksSlice';
 import Book from './Book';
 
-const BookList = ({ books, onDelete }) => (
-  <div>
-    {books.map((book) => (
-      <Book key={book.id} id={book.id} title={book.title} onDelete={onDelete} />
-    ))}
-  </div>
-);
+const BookList = () => {
+  const dispatch = useDispatch();
+  const books = useSelector((state) => state.books.books);
+  const status = useSelector((state) => state.books.status);
+  const error = useSelector((state) => state.books.error);
 
-BookList.propTypes = {
-  books: PropTypes.string.isRequired,
-  onDelete: PropTypes.string.isRequired,
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+
+  const handleDeleteBook = async (id) => {
+    dispatch(deleteBook(id)).then(() => {
+      dispatch(fetchBooks());
+    });
+  };
+
+  if (status === 'loading') {
+    return <div>Loading...</div>;
+  }
+
+  if (status === 'failed') {
+    return (
+      <div>
+        Error:
+        {' '}
+        {error}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      {books && books.map((book) => (
+        <Book
+          key={book.item_id}
+          id={book.item_id}
+          title={book.title}
+          author={book.author}
+          onDelete={handleDeleteBook}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default BookList;
