@@ -9,6 +9,7 @@
   --white-two: #fff;
   --azure: #0290ff;
   --black-5: rgba(0, 0, 0, 0.3);
+
   background-color: var(--white);
 }
 
