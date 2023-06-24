@@ -22,7 +22,7 @@
 
 # 📖 Bookstore! <a name="about-project"></a>
 
-**Bookstore!** In this milestone, I implement Redux Toolkit inside of a React application.
+**Bookstore!** In this milestone, I implement Redux Toolkit inside of a React application.And also I use grid css to make the website loos great.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -129,6 +129,7 @@ or a web-hosting platform of your choice.
 
 - Use store, actions and reducers in React.
 - Connect React and Redux.
+- Update Circle percent when a user add a book
 
 - [ ] **Updates will be made shortly to make the page interactive**
 
