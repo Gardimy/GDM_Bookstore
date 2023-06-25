@@ -38,28 +38,26 @@ const Book = ({
           </button>
         </div>
       </div>
-      <div className="Seconde-section">
-        <div className="progress-circle" data-percent="15" />
-        <div className="percent-cnt">
-          <div className="percent-number Text-Style-2">
-            64%
-          </div>
-          <div className="percent-completed Text-Style-2">
-            Completed
-          </div>
+      <span className="circle" data-percent="17" />
+      <div className="percent">
+        <div className="percent-number Text-Style-2">
+          64%
         </div>
-        <div className="Line-2" />
-        <div className="bookItem-right">
-          <div className="current-chapter Text-Style-2">
-            Current Chapter
-          </div>
-          <div className="chapter Text-Style-1">
-            Chapter 17
-          </div>
-          <button className="btn-update rectangle-1 Text-Style" type="button">
-            UPDATE PROGRESS
-          </button>
+        <div className="percent-completed Text-Style-2">
+          Completed
         </div>
+      </div>
+      <div className="Line-2" />
+      <div className="Update-book">
+        <div className="current-chapter Text-Style-2">
+          Current Chapter
+        </div>
+        <div className="chapter Text-Style-1">
+          Chapter 17
+        </div>
+        <button className="btn-update rectangle-1 Text-Style" type="button">
+          UPDATE PROGRESS
+        </button>
       </div>
     </div>
   );
