@@ -23,8 +23,8 @@ const Home = () => {
 
   return (
     <div>
-      <BookForm onCreate={handleCreateBook} />
       <BookList books={books} onDelete={handleDeleteBook} />
+      <BookForm onCreate={handleCreateBook} />
     </div>
   );
 };
