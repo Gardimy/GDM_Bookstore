@@ -158,7 +158,7 @@
   border-right: var(--very-light-pink) 1px solid;
 }
 
-.bookItem-right {
+.Update-book {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -166,9 +166,10 @@
   padding-right: 4rem;
 }
 
-.percent-cnt {
+.percent {
   text-align: center;
-  padding-left: 1rem;
+  padding-left: 0;
+  flex-direction: column;
 }
 
 .percent-number {
@@ -281,16 +282,17 @@
   width: 80%;
 }
 
-.progress-circle {
+.circle {
   position: relative;
   width: 80px;
+  margin-left: 70px;
   height: 80px;
   border-radius: 50%;
   background-color: lightgray;
   overflow: hidden;
 }
 
-.progress-circle::before {
+.circle::before {
   content: '';
   position: absolute;
   top: 0;
@@ -304,7 +306,7 @@
   transition: transform 1.5s;
 }
 
-.progress-circle::after {
+.circle::after {
   content: '';
   position: absolute;
   top: 8%;
@@ -317,7 +319,7 @@
   transform: rotate(calc(360deg * var(--percent) / 100));
 }
 
-.progress-circle[data-percent="15"]::before {
+.circle[data-percent="15"]::before {
   transform: rotate(360deg);
 }
 
@@ -334,7 +336,7 @@
   width: 0.125rem;
   height: 4.375rem;
   margin: 1.125rem 3.688rem 0 4.938rem;
-  border: solid 1px #e8e8e8;
+  border: solid 0.1rem #e8e8e8;
 }
 
 .rectangle-1 {

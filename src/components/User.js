@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/Navba.css';
 
 const User = () => (
-  <div>
+  <div className="user-circle">
     <FontAwesomeIcon icon="fa-solid fa-user" />
   </div>
 );
