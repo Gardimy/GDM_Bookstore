@@ -7,7 +7,8 @@
 
 .Navbar {
   display: flex;
-  gap: 30px;
+  gap: 50px;
+  margin-left: 3%;
   align-items: center;
   text-decoration: none;
   list-style: none;
@@ -17,6 +18,29 @@ li a {
   text-decoration: none;
   list-style: none;
   color: gray;
+}
+
+.bookslink {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}
+
+.faUser {
+  color: rgb(0, 162, 255);
+  margin: 3%;
+  margin-left: 57%;
+}
+
+.user-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgb(128, 128, 128);
+  color: rgb(0, 162, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
